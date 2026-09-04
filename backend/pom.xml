@@ -47,10 +47,11 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- PostgreSQL Driver (for Supabase / Neon Cloud Deployment) -->
+        <!-- PostgreSQL Driver (for Cloud Deployment) -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
+            <version>42.7.2</version>
         </dependency>
 
         <!-- H2 Database for local embedded testing/fallback -->
