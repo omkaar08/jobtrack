@@ -1,0 +1,8 @@
+#!/bin/sh
+MAVEN_BIN="$(dirname "$0")/.mvn/apache-maven-3.9.6/bin/mvn"
+if [ -f "$MAVEN_BIN" ]; then
+    chmod +x "$MAVEN_BIN"
+    "$MAVEN_BIN" "$@"
+else
+    mvn "$@"
+fi
